@@ -49,7 +49,7 @@
                         <viewControllerLayoutGuide type="top" id="eMi-Yn-wj3"/>
                         <viewControllerLayoutGuide type="bottom" id="SdN-wF-iDE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rXr-oK-49d">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="DiceViewController" id="rXr-oK-49d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
