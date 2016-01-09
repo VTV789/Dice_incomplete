@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Roll View Controller-->
@@ -25,9 +25,6 @@
                                 <state key="normal" title="Roll The Dice!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="rollTheDice" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cqC-hi-ddd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,9 +33,6 @@
                             <constraint firstAttribute="centerY" secondItem="0CI-ro-g3x" secondAttribute="centerY" id="icH-2t-PDN"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="qUR-90-axl" kind="modal" identifier="rollDice" id="V5P-bS-Jla"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +46,7 @@
                         <viewControllerLayoutGuide type="top" id="eMi-Yn-wj3"/>
                         <viewControllerLayoutGuide type="bottom" id="SdN-wF-iDE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="DiceViewController" id="rXr-oK-49d">
+                    <view key="view" contentMode="scaleToFill" id="rXr-oK-49d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -102,7 +96,6 @@
                     </view>
                     <connections>
                         <outlet property="firstDie" destination="r8F-NY-C0r" id="3Xg-2o-Wy0"/>
-                        <outlet property="secondDie" destination="auL-3f-b4I" id="MrB-OL-sn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckr-Co-O4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
