@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="DiceViewController" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -37,6 +37,9 @@
                             <constraint firstAttribute="centerY" secondItem="0CI-ro-g3x" secondAttribute="centerY" id="icH-2t-PDN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="qUR-90-axl" kind="modal" id="3fe-Oe-2EB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,6 +101,7 @@
                             <outletCollection property="gestureRecognizers" destination="o8S-Co-8tn" appends="YES" id="qTe-qd-igR"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="F16-nN-RFZ"/>
                     <connections>
                         <outlet property="firstDice" destination="r8F-NY-C0r" id="Z3P-h7-2uF"/>
                         <outlet property="secondDice" destination="auL-3f-b4I" id="NN2-sP-6PI"/>
