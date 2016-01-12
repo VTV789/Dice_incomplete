@@ -13,33 +13,33 @@ class DiceViewController: UIViewController {
     var firstValue: Int?
     var secondValue: Int?
     
-    @IBOutlet var firstDie: UIImageView!
-    @IBOutlet var secondDie: UIImageView!
+    @IBOutlet var firstDice: UIImageView!
+    @IBOutlet var secondDice: UIImageView!
     
     override func viewWillAppear(animated: Bool) {
         
         // The dice will only appear if firstValue and secondValue have been set
         if let firstValue = self.firstValue {
-            self.firstDie.image = UIImage(named: "d\(firstValue)")
+            self.firstDice.image = UIImage(named: "d\(firstValue)")
         } else {
-            self.firstDie.image = nil;
+            self.firstDice.image = nil;
         }
         
         if let secondValue = self.secondValue {
-            self.secondDie.image = UIImage(named: "d\(secondValue)")
+            self.secondDice.image = UIImage(named: "d\(secondValue)")
         } else {
-            self.secondDie.image = nil
+            self.secondDice.image = nil
         }
         
-        self.firstDie.alpha = 0
-        self.secondDie.alpha = 0
+        self.firstDice.alpha = 0
+        self.secondDice.alpha = 0
     }
     
     override func viewDidAppear(animated: Bool) {
         
         UIView.animateWithDuration(0.3) {
-            self.firstDie.alpha = 1
-            self.secondDie.alpha = 1
+            self.firstDice.alpha = 1
+            self.secondDice.alpha = 1
         }
     }
     

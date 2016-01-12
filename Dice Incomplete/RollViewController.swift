@@ -22,6 +22,15 @@ class RollViewController: UIViewController {
 
     @IBAction func rollTheDice() {
         
+        let controller:DiceViewController
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("DiceViewController") as! DiceViewController
+        
+        controller.firstValue = self.randomDiceValue()
+        controller.secondValue = self.randomDiceValue()
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+        
     }
 }
+
 
