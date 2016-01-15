@@ -19,9 +19,13 @@ class RollViewController: UIViewController {
         // Return a more convenient Int, initialized with the random value
         return Int(randomValue)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+    }
 
     @IBAction func rollTheDice() {
-        
        performSegueWithIdentifier("rollDice", sender: self)
         
     }
